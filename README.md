@@ -21,7 +21,7 @@ The objective is to demonstrate how a **single AFDM waveform** can support both:
 
 within a high-mobility, delay-Doppler environment.
 
-The project evaluates both communication and sensing performance using a complete simulation chain that includes AFDM modulation/demodulation, doubly-selective channels, pilot-aided channel estimation, equalization, BER analysis, Range-Doppler processing, and CFAR-based target detection. The project materials describe the motivation around Doppler sensitivity and the use of AFDM for simultaneous communication and sensing. :contentReference[oaicite:3]{index=3} :contentReference[oaicite:4]{index=4}
+The project evaluates both communication and sensing performance using a complete simulation chain that includes AFDM modulation/demodulation, doubly-selective channels, pilot-aided channel estimation, equalization, BER analysis, Range-Doppler processing, and CFAR-based target detection. The project materials describe the motivation around Doppler sensitivity and the use of AFDM for simultaneous communication and sensing.  
 
 ---
 
@@ -54,7 +54,7 @@ AFDM is investigated as a waveform designed to better handle **delay-Doppler dis
                 ISAC
 ```
 
-The project follows the AFDM-ISAC approach described in the provided project materials, where one waveform serves both communication and sensing functions. :contentReference[oaicite:5]{index=5}
+The project follows the AFDM-ISAC approach described in the provided project materials, where one waveform serves both communication and sensing functions. 
 
 ---
 
@@ -156,7 +156,7 @@ The current implementation uses the following main simulation parameters:
 | Target ranges | 300 m, 200 m, 120 m |
 | Target velocities | 20 m/s, 8 m/s, -8 m/s |
 
-These values are taken from the implemented MATLAB simulation rather than invented for the README. :contentReference[oaicite:6]{index=6} :contentReference[oaicite:7]{index=7}
+These values are taken from the implemented MATLAB simulation rather than invented for the README.  
 
 ---
 
@@ -184,7 +184,7 @@ QAM Demodulation
 BER / SER / EVM
 ```
 
-The MATLAB implementation performs pilot-aided least-squares channel estimation and ZF equalization before computing communication metrics. :contentReference[oaicite:8]{index=8}
+The MATLAB implementation performs pilot-aided least-squares channel estimation and ZF equalization before computing communication metrics. 
 
 ## Pilot Structure
 
@@ -236,7 +236,7 @@ Range-Doppler Map
 CFAR Detection
 ```
 
-The project source implements both **time-domain FCCR sensing** and **DAFT-domain sensing**, followed by CFAR detection. :contentReference[oaicite:9]{index=9}
+The project source implements both **time-domain FCCR sensing** and **DAFT-domain sensing**, followed by CFAR detection. 
 
 ---
 
@@ -250,7 +250,7 @@ Target 2 → Range = 200 m   | Velocity =  +8 m/s
 Target 3 → Range = 120 m   | Velocity =  -8 m/s
 ```
 
-The source explicitly defines these target locations and velocities and converts them into propagation delays and Doppler frequencies. :contentReference[oaicite:10]{index=10}
+The source explicitly defines these target locations and velocities and converts them into propagation delays and Doppler frequencies. 
 
 ---
 
@@ -264,7 +264,7 @@ The project evaluates AFDM communication performance over an SNR sweep and compa
   <img src="results/communication/ber-vs-snr.png" alt="BER vs SNR" width="800">
 </p>
 
-The implementation performs Monte-Carlo BER evaluation and also generates theoretical AWGN reference results. :contentReference[oaicite:11]{index=11}
+The implementation performs Monte-Carlo BER evaluation and also generates theoretical AWGN reference results. 
 
 ---
 
@@ -375,7 +375,7 @@ The current implementation uses:
 - Training cells: `8`
 - Guard cells: `2`
 
-and extracts detected target range and velocity from connected detection regions. :contentReference[oaicite:13]{index=13}
+and extracts detected target range and velocity from connected detection regions. 
 
 ---
 
@@ -401,7 +401,7 @@ The simulation evaluates both communication and sensing metrics.
 - CFAR detections
 - Doppler ambiguity / velocity range
 
-The source prints these metrics as part of the final simulation summary. :contentReference[oaicite:14]{index=14}
+The source prints these metrics as part of the final simulation summary. 
 
 ---
 
